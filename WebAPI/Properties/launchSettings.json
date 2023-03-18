@@ -1,0 +1,46 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:27522",
+      "sslPort": 44340
+    }
+  },
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "VaultUri": "https://s001-keyvalut.vault.azure.net/",
+        "AZURE_USERNAME": "Praveen.Yadav@marlabs.com",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "WebAPI": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "VaultUri": "https://s001-keyvalut.vault.azure.net/",
+        "AZURE_USERNAME": "Praveen.Yadav@marlabs.com",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": "true",
+      "applicationUrl": "https://localhost:5001;http://localhost:5000"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
+      "environmentVariables": {
+        "AZURE_USERNAME": "Praveen.Yadav@marlabs.com",
+        "AppConfig__hostIp": "172.173.129.6"
+      },
+      "publishAllPorts": true,
+      "useSSL": true
+    }
+  }
+}

@@ -1,0 +1,26 @@
+﻿Students
+	#Add Multi Students
+	#Add Single Student
+	#View All Students
+	#Students reports 
+	#Admission Form 
+
+
+Student Profile 
+1. Student Name: First Name,Middle Name and Last Name
+2. Gender
+3. Religions 
+4. DOB
+5. DOA
+
+6. Session
+7. Class/Courses
+8. Optional Subjects
+
+9. Address
+10. Parent/Garduen 
+11. Admission Test Details 
+	a) Privious class
+	b) Privious Institute 
+	c) Total Marks 
+	d) Obtained Marks 
