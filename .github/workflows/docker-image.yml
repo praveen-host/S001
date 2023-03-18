@@ -29,5 +29,5 @@ jobs:
       uses: docker/build-push-action@v4
       with:
         push: true
-        tags: ${{NOW}}
+        tags: ${{steps.NOW}}
         file: WebAPI/Dockerfile
