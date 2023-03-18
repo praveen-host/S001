@@ -33,7 +33,7 @@ namespace WebAPI.Controllers
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class MessageHandler : Hub
     {
-        private Dictionary<string, UserDetails> connectedUsers = new Dictionary<string, UserDetails>();
+        private readonly Dictionary<string, UserDetails> connectedUsers = new Dictionary<string, UserDetails>();
         public override Task OnConnectedAsync()
         {
 
