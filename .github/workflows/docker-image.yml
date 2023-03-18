@@ -29,5 +29,5 @@ jobs:
       uses: docker/build-push-action@v4
       with:
         push: true
-        tags: praveenhostazcrs001.azurecr.io/praveenhostazcrs001:${{steps.NOW}}
+        tags: praveenhostazcrs001.azurecr.io/praveenhostazcrs001:${{ github.date }}
         file: WebAPI/Dockerfile
