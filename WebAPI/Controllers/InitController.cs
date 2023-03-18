@@ -14,8 +14,8 @@ namespace WebAPI.Controllers
     {
          
         // POST api/<InitController>
-        [HttpPost]
-        public void Post()
+        [HttpGet("Test")]
+        public void GetTest()
         {
             Ok("Updateddddddddddddddddddd");
         }
