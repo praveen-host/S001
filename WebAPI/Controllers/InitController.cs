@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DTO;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,12 +14,16 @@ namespace WebAPI.Controllers
     [ApiController]
     public class InitController : ControllerBase
     {
-         
+        private readonly AppConfig appConfig;
+        public InitController(IOptions<AppConfig> _appConfig)
+        {
+            this.appConfig = _appConfig.Value;
+        }
         // POST api/<InitController>
         [HttpGet("Test")]
         public void GetTest()
         {
-            Ok("Updateddddddddddddddddddd");
+            Ok(this.appConfig);
         }
 
     }
