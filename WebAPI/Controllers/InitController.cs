@@ -21,9 +21,9 @@ namespace WebAPI.Controllers
         }
         // POST api/<InitController>
         [HttpGet("Test")]
-        public void GetTest()
+        public IActionResult GetTest()
         {
-            Ok(this.appConfig);
+            return  Ok(this.appConfig);
         }
 
     }
