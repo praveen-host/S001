@@ -36,9 +36,9 @@ namespace WebAPI.Controllers
                 var detail = await userDetailRepository.GetUserDetail(validUser.UserId);
                 var claims = new[] {
                         //new Claim(JwtRegisteredClaimNames.Sub, _configuration["Jwt:Subject"]),
-                        new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                        new Claim(JwtRegisteredClaimNames.Iat, DateTime.UtcNow.ToString()),
-                        new Claim("UserName",validUser.UserName),
+                        //new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                        //new Claim(JwtRegisteredClaimNames.Iat, DateTime.UtcNow.ToString()),
+                        //new Claim("UserName",validUser.UserName),
                         new Claim("FName", detail.FName),
                         new Claim("MName",  detail.MName),
                         new Claim("LName",  detail.MName),
