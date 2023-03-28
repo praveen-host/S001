@@ -43,6 +43,8 @@ namespace WebAPI
             services.AddSignalR(options=> {
 
                 options.EnableDetailedErrors = true;
+                options.KeepAliveInterval = TimeSpan.FromSeconds(5);
+                options.ClientTimeoutInterval = TimeSpan.FromSeconds(10);
             });
 
             services.Configure<AppConfig>(Configuration.GetSection("AppConfig"));
@@ -123,6 +125,7 @@ namespace WebAPI
             app.UseRouting();
             app.UseCors("AllowOrigin");
             app.UseAuthorization();
+            
             
             app.UseEndpoints(endpoints =>
             {
