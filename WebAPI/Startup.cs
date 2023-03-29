@@ -43,8 +43,8 @@ namespace WebAPI
             services.AddSignalR(options=> {
 
                 options.EnableDetailedErrors = true;
-                options.KeepAliveInterval = TimeSpan.FromSeconds(5);
-                options.ClientTimeoutInterval = TimeSpan.FromSeconds(10);
+                options.KeepAliveInterval = TimeSpan.FromSeconds(3);
+                options.ClientTimeoutInterval = TimeSpan.FromSeconds(6);
             });
 
             services.Configure<AppConfig>(Configuration.GetSection("AppConfig"));
